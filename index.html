@@ -3,10 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Archivo Black' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    <title>Yash Bendersh</title>
+    <title>Happy Birthday to you Brother</title>
 </head>
 <body>
-    <h1>Hello world, I am Yash.</h1>
+    <div class="name-heading">
+        <h1>"hello world!"</h1>
+    </div>
+    <div class="b-day-container">
+        <div class="text-bday-container">
+            <h2>To my best friend Aayush</h2>
+            <div class="play-music-btn">
+                <button id="playMusicBtn">Play Music</button>
+            </div>
+            <div class="ten-gif">
+                <div class="tenor-gif-embed" data-postid="1391094233824704384" data-share-method="host" data-aspect-ratio="1" data-width="100%"><a href="https://tenor.com/view/appurajosh-appu-gif-1391094233824704384">Happy Birthday</a>from <a href="https://www.yashbendersh.site/">Yash</a></div> 
+                <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+            </div>
+            <div class="by-yash">
+                <h3>By Yash Bendersh</h3>
+            </div>
+            <div class="social-handle">
+                <a href="https://www.instagram.com/firecodespace/" target="_blank">Instagram</a>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Audio element for background music -->
+    <audio id="bg_music" autoplay loop>
+        <source src="/assets/temp-aud/Happy Birthday (Piano Version).mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <!-- Script to pause the music when the user interacts with the page -->
+    <script src="script.js"></script>
 </body>
 </html>
