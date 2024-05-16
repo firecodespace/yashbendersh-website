@@ -1,18 +1,159 @@
 body {
     background-color: #f5f5f5;
     font-family: Arial, Helvetica, sans-serif;
-    margin: 0; /* Remove default margin */
+    margin: 0;
 }
 
-h1 {
-    margin: 100px 20px; /* Use shorthand for margin */
+.name-heading {
+    text-align: center;
+    background-color: black;
+    margin-top: 20px;
+    width: 100vw; 
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.name-heading h1 {
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 90px;
+    font-weight: 400; /* Adjusted font weight */
+    color: rgb(27, 232, 27);
+    line-height: 1; /* Ensure line height is normal */
+}
+
+.b-day-container{
+    max-width: 700px; /* Set the maximum width */
+    margin: 0 auto; /* Center the div horizontally */
+    padding: 20px; /* Add some padding for spacing */
+}
+
+.text-bday-container{
+    text-align: center;
+}
+
+.text-bday-container h2{
+    font-family: "Merriweather", serif;
+    font-size: 40px;
+    font-weight: 700;
+    font-style: normal;  
+}
+
+.social-handle{
+    margin-top: 10px;
+}
+
+.social-handle a{
+    text-decoration: none;
+    color: black;
+    font-family: 'Poppins';
+}
+
+.social-handle a:hover{
+    text-decoration: underline dotted;
+}
+
+.music-control {
+    position: fixed;
+    bottom: 20px; /* Adjust the distance from the bottom */
+    right: 20px; /* Adjust the distance from the right */
+    z-index: 9999; /* Ensure it stays above other elements */
+}
+
+.play-music-btn {
+    text-align: center;
+    margin-top: 20px; /* Adjust margin as needed */
+    margin-bottom: 30px;
+}
+
+.play-music-btn button {
+    position: relative;
+    background: linear-gradient(to right, #fe8d8d, #FFD966, #84fd88);
+    border: none;
+    border-radius: 15px; /* Adjust border radius as needed */
+    padding: 15px 30px; /* Adjust padding as needed */
+    font-size: 18px; /* Adjust font size as needed */
+    color: white;
+    cursor: pointer;
+    overflow: hidden;
+    transition: background 1s;
+}
+
+.play-music-btn button::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    font-size: 30px; /* Adjust font size as needed */
+    padding: 20px; /* Adjust padding as needed */
+    color: white;
+    border-radius: 10px;
+    background: linear-gradient(to right, #fe8d8d, #FFD966, #84fd88); /* Adjust gradient colors as needed */
+    z-index: -1;
+    animation: color-gradient 7s linear infinite alternate;
+}
+
+.play-music-btn button:hover {
+    background: linear-gradient(to right, #84fd88, #FFD966, #fe8d8d); /* Adjust gradient colors as needed */
+}
+
+@keyframes color-gradient {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+
+.ten-gif{
     pointer-events: none;
     user-select: none;
 }
 
+#toggle-music {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+
 /* Responsive Styles */
-@media only screen and (max-width: 600px) {
-    h1 {
-        margin: 50px 10px; /* Adjust margins for smaller screens */
+@media only screen and (max-width: 760px) {
+    .name-heading h1 {
+        font-size: 80px;
     }
 }
+
+@media only screen and (max-width: 680px) {
+    .name-heading h1 {
+        font-size: 70px;
+    }
+}
+
+@media only screen and (max-width: 595px) {
+    .name-heading h1 {
+        font-size: 60px;
+    }
+}
+
+@media only screen and (max-width: 525px) {
+    .name-heading h1 {
+        font-size: 50px;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .name-heading h1 {
+        font-size: 40px;
+    }
+}
+
+
